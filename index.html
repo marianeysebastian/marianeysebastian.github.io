@@ -236,33 +236,49 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 row text-center">
-                    <h3>No olvides confirmar tu asistencia</h3>
-                    <p style="color: black">Nos ayudaria que pudieran confirmar antes de Enero del 2024</p>
-                    <div class="col-md-6" style="padding: 5px;">
-                        <a href="https://wa.me/+524773099327" class="btn btn-fill-whatsapp btn-small" target="_blank"
-                            data-aos="zoom-in">
-                            <i class="fab fa-whatsapp"></i>
-                            &nbsp;&nbsp;Sebastian Arredondo
-                        </a>
-                    </div>
-                    <div class="col-md-6" style="padding: 5px;">
-                        <a href="https://wa.me/+524773920517" class="btn btn-fill-whatsapp btn-small" target="_blank"
-                            data-aos="zoom-in">
-                            <i class="fab fa-whatsapp"></i>
-                            &nbsp;&nbsp;Mariane Tamm
-                        </a>
-                    </div>
-                    <div class="col-md-6" style="padding: 5px;">
-                        <a href="https://wa.me/+524773099327" class="btn btn-fill-whatsapp btn-small" target="_blank"
-                            data-aos="zoom-in">
-                            <i class="fab fa-whatsapp"></i>
-                            &nbsp;&nbsp;Alicia Ortiz
-                        </a>
-                    </div>
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Confirma tu asistencia</h3>
+                    <p>Por favor, confirma antes de enero de 2024</p>
+                    <p>Todos cuentan con un +1, recuerda que este evento es sin niños</p>
+                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input name="email" class="" placeholder="email o celular" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input name="name" class="" placeholder="Tu nombre" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input type="number" name="extras" class="" min="0" max="4"
+                                        placeholder="Invitados adicionales" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input type="number" name="invite_code" id="invite_code" class="" min="0"
+                                        placeholder="Código de invitación" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="alert-wrapper"></div>
+                        </div>
+                        <button class="btn-fill rsvp-btn">
+                            Sí, confirmar asistencia
+                        </button>
+                    </form>
                 </div>
             </div>
+
         </div>
+
     </section>
 
     <section id="eng-pics" class="section-padding">
