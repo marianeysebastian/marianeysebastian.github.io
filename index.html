@@ -135,11 +135,128 @@
     </section>
     <section class="events section-padding" id="events">
         <div class="container">
-<div class="row">
-    <div class="col-md-12" style="text-align: center;">
-        <h3 class="header">Itinerario</h3>
-    </div>
-</div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <h3 class="header">Mesa de Regalos</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="wp3">
+                        <h4 style="color: black">Mesa de liverpool </h4>
+                        <h5> 51249481</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="wp4">
+                        <h4 style="color: black">Mesa de Palacio de Hierro </h4>
+                        <h5> 380946</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="events section-padding" id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <h3 class="header">Convenio Hyatt</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="wp3">
+
+                        <h4 style="color: black">Correo: reservas.hcl@gsf-hotels.com </h4>
+                        <h5>Mencionar codigo: BMS16</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="wp4">
+
+                        <h4 style="color: black">Ejecutivo </h4>
+                        <h5> CARMEN RODRÍGUEZ
+                            Teléfono (477) 344 1111
+                            ventas1.hcl@gsf-hotels.com
+                            carmen.rodriguez@hyatt.com</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rsvp text-center" id="rsvp">
+
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <div class="section-padding">
+                            <h3>Gracias!</h3>
+                            <p style="color: black">¡Estamos felices de poder compartir este día tan importante con
+                                ustedes!</p>
+                            <div id="add-to-cal"></div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Confirma tu asistencia</h3>
+                    <p>Por favor, confirma antes de Enero de 2024</p>
+                    <p>Todos cuentan con un invitado extra. Recuerda que este evento es sin niños.</p>
+                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input name="email" class="" placeholder="email o celular" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input name="name" class="" placeholder="Tu nombre" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input type="text" name="extras" class="" placeholder="Nombre de invitado adicional"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-input-group">
+                                    <input type="number" name="invite_code" id="invite_code" class="" min="0"
+                                        placeholder="Código de invitación" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="alert-wrapper"></div>
+                        </div>
+                        <button class="btn-fill rsvp-btn">
+                            Sí, confirmar asistencia
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="events section-padding" id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <h3 class="header">Itinerario</h3>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp3">
@@ -214,70 +331,6 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
-    </section>
-    <section class="rsvp text-center" id="rsvp">
-
-        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                        </button>
-                        <div class="section-padding">
-                            <h3>Gracias!</h3>
-                            <p style="color: black">¡Estamos felices de poder compartir este día tan importante con ustedes!</p>
-                            <div id="add-to-cal"></div>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <h3>Confirma tu asistencia</h3>
-                    <p>Por favor, confirma antes de Enero de 2024</p>
-                    <p>Todos cuentan con un invitado extra. Recuerda que este evento es sin niños.</p>
-                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-input-group">
-                                    <input name="email" class="" placeholder="email o celular" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-input-group">
-                                    <input name="name" class="" placeholder="Tu nombre" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-input-group">
-                                    <input type="text" name="extras" class=""
-                                        placeholder="Nombre de invitado adicional" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-input-group">
-                                    <input type="number" name="invite_code" id="invite_code" class="" min="0"
-                                        placeholder="Código de invitación" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12" id="alert-wrapper"></div>
-                        </div>
-                        <button class="btn-fill rsvp-btn">
-                            Sí, confirmar asistencia
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-        </div>
 
     </section>
 
