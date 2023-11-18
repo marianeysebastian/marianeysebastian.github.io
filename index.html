@@ -52,35 +52,43 @@
             }
         }
     </script>
-
-    <script>
-    // Set the date we're counting down to
-    var targetDate = new Date("March 16, 2024 13:00:00").getTime();
-    
-    // Update the countdown every 1 second
-    var countdownInterval = setInterval(function() {
-    
-        // Get the current date and time
-        var currentDate = new Date().getTime();
-    
-        // Calculate the remaining time
-        var timeRemaining = targetDate - currentDate;
-    
-        // Calculate days, hours, minutes, and seconds
-        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-    
-        // Display the countdown
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    
-        // If the countdown is over, clearInterval
-        if (timeRemaining < 0) {
-            clearInterval(countdownInterval);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
+    <style>
+        #countdown {
+            font-size: 3em;
+            /* Adjust the font size as needed */
+            text-align: center;
+            margin-top: 20px;
+            /* Adjust margin as needed */
         }
-    }, 1000);
+    </style>
+    <script>
+        // Set the date we're counting down to
+        var targetDate = new Date("March 16, 2024 13:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var countdownInterval = setInterval(function () {
+
+            // Get the current date and time
+            var currentDate = new Date().getTime();
+
+            // Calculate the remaining time
+            var timeRemaining = targetDate - currentDate;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, clearInterval
+            if (timeRemaining < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
 
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -131,7 +139,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="hero-content text-center">
                         <h1>We are getting married!</h1>
-                        <div id="countdown" style="color:white;" style="font-size: 10em;"></div>
+                        <div id="countdown" style="color:white; font-size: 3em;"></div>
                         <h1>Mariane y Sebastián</h1>
                         <h2 style="color:white;">
                             <bold>16 de marzo 2024</bold>
@@ -177,8 +185,7 @@
                         <h4 style="color: black; text-align: center;">Mesa de liverpool </h4>
                         <h5 style="text-align: center;"> 51249481</h5>
                         <h5>
-                            <a target="_blank"
-                                style="text-align: center; display: block;"
+                            <a target="_blank" style="text-align: center; display: block;"
                                 href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51249481">Da click
                                 aqui</a>
                         </h5>
@@ -188,10 +195,8 @@
                     <div class="wp4">
                         <h4 style="color: black; text-align: center;">Mesa de Palacio de Hierro </h4>
                         <h5 style="text-align: center;"> 380946</h5>
-                        <a 
-                        style="text-align: center; display: block;"
-                        target="_blank" 
-                        href="https://www.elpalaciodehierro.com/buscar?eventId=380946">Da click
+                        <a style="text-align: center; display: block;" target="_blank"
+                            href="https://www.elpalaciodehierro.com/buscar?eventId=380946">Da click
                             aqui</a>
                     </div>
                 </div>
